@@ -1,0 +1,11 @@
+.image-container {
+    width: 80%;
+    margin: 2% auto;
+    .img {
+        width: 30%;
+        margin: 2% 1%;
+        display: inline-block;
+        object-fit: cover;
+        height: 300px;
+    }
+}
