@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "node ./deploy-script.js",
     "start": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --mode development"
   },
