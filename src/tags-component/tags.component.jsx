@@ -25,7 +25,6 @@ export default class TagsComponent extends React.Component {
                         return (
                             <Chip
                                 key={tag.id}
-                                avatar={<Avatar>{tag.name[0]}</Avatar>}
                                 label={tag.name}
                                 onDelete={() => this.handleDelete(tag)}
                                 onClick={() => this.handleClick(tag.name)}

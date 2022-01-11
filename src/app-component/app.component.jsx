@@ -10,7 +10,7 @@ export default class AppComponent extends React.Component {
             imageArr: [],
             tags: [],
             value: '',
-            loading: true
+            loading: false
         };
         this.setCategory = this.setCategory.bind(this);
         this.setLoading = this.setLoading.bind(this);
@@ -52,8 +52,7 @@ export default class AppComponent extends React.Component {
             return;
         }
         this.setLoading(true);
-        this.setState({value});
-        this.getImages();
+        this.setState({value}, this.getImages);
         this.setTag(value);
     }
 
@@ -70,8 +69,7 @@ export default class AppComponent extends React.Component {
             return;
         }
         this.setLoading(true);
-        this.setState({value: name});
-        this.getImages();
+        this.setState({value: name}, this.getImages);
     }
 
     render() {
@@ -79,13 +77,16 @@ export default class AppComponent extends React.Component {
             <div>
                 <InputComponent handleSubmit={this.setCategory} />
                 {
-                  this.state.tags.length ? <hr/> : ''
+                this.state.tags.length ? <hr/> : ''
                 }
                 <TagsComponent
                     tags={this.state.tags}
                     deleteTag={this.handleTagDelete}
                     searchForTag={this.searchTag}
                 />
+                {
+                    this.state.loading && ( <div className="loading-container"><img className='loader-img' key='loader' src='src/asset/loader.gif' /></div>)
+                }
                 {
                     !this.state.loading && this.state.imageArr.length ? <hr/> : ''
                 }
