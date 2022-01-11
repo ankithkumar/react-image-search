@@ -85,7 +85,7 @@ export default class AppComponent extends React.Component {
                     searchForTag={this.searchTag}
                 />
                 {
-                    this.state.loading && ( <div className="loading-container"><img className='loader-img' key='loader' src='src/asset/loader.gif' /></div>)
+                    this.state.loading && ( <div className="loading-container"><img className='loader-img' key='loader' src='https://c.tenor.com/XK37GfbV0g8AAAAi/loading-cargando.gif' /></div>)
                 }
                 {
                     !this.state.loading && this.state.imageArr.length ? <hr/> : ''
