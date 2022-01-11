@@ -20,6 +20,17 @@ eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\
 
 eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\n  \n\n//# sourceURL=webpack:///./src/list-component/list.component.scss?");
 
+/***/ }),
+
+/***/ "./src/tags-component/tags.component.scss":
+/*!************************************************!*\
+  !*** ./src/tags-component/tags.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\n  \n\n//# sourceURL=webpack:///./src/tags-component/tags.component.scss?");
+
 /***/ })
 
 }]);

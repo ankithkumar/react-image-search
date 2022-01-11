@@ -8,13 +8,21 @@
   width: 80%;
   margin: 2% auto; }
 
+.loading-container {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: center; }
+
 .image-container {
-  width: 80%;
-  margin: 2% auto; }
+  width: 100%; }
   .image-container .img {
-    width: 30%;
+    width: 23%;
     margin: 2% 1%;
     display: inline-block;
     object-fit: cover;
     height: 300px; }
+
+.tag {
+  margin: 0 2px !important; }
 
